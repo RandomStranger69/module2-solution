@@ -1,1 +1,168 @@
+<!--DM 04/27/24-->
+
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8">
+    <title>module2-solution</title>
+    <style> 
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            margin: 100px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 175%; 
+            /* Also, set the font size of the heading and section title to 
+            be 75% larger and 25% larger (respectively) than the font 
+            size of the dummy text. */ 
+        }
+
+        section {
+            position: relative;
+            padding: 15px;
+            width: 100%;
+        }
+
+        p {
+            position: relative;
+            clear: right;
+        }
+
+        div {
+            position: relative;
+            background-color: gray;
+            border: 1px solid black;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+        }
+
+        .sub1 { /* Chicken Subsection */
+            float: right;
+            width: 100px;
+            padding: 5px;
+            margin: 0px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 125%;
+            font-weight: bold;
+            background-color: rgba(231, 158, 158, 0.437);
+        }
+        .sub2 { /* Beef Subsection */
+            float: right;
+            color: whitesmoke;
+            width: 100px;
+            padding: 5px;
+            margin: 0px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 125%;
+            font-weight: bold;
+            background-color: rgba(190, 29, 29, 0.941);
+        }
+        .sub3 { /* Sushi Subsection */
+            float: right;
+            color: black;
+            width: 100px;
+            padding: 5px;
+            margin: 0px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 125%;
+            font-weight: bold;
+            background-color: rgb(247, 241, 136);
+        }
+        .content {
+            padding: 5px;
+            color: black;
+            border: none;
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            height: 200px;
+            overflow: auto;
+        }
+
+        .row {
+            width: 90%;
+        }
+
+        /* Mobile Layout with max width of 767 pixels */
+        @media (max-width: 767px) {
+            .colmn-sm-12 { /* small screens */
+                float: left;
+                width: 100%;
+            }
+        }
+
+        /* Tablet Layout with width between 768px and 991px */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .colmn-md-6 {
+                float: left;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .colmn-md-12 {
+                float: left;
+                width: 100%; /* Change width to 100% for "Sushi" section */
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        /* Desktop Layout with max width of 992 pixels and beyond */
+        @media (min-width: 992px) {
+            .colmn-lg-4 { /* large screens */
+                float: left;
+                width: 33.33%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+
+    <section class="colmn-lg-4 colmn-md-6 colmn-sm-12"> 
+        <div>
+            <p class="sub1">Chicken</p> 
+            <p class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis repudiandae ipsa ipsam aperiam! Aspernatur, 
+                harum dignissimos iure aliquam fuga error similique minima veniam numquam, architecto praesentium voluptatum. 
+                Unde, ipsam voluptas?
+            </p>
+        </div>
+    </section>
+
+    <section class="colmn-lg-4 colmn-md-6 colmn-sm-12"> 
+        <div>
+            <p class="sub2">Beef</p> 
+            <p class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis repudiandae ipsa ipsam aperiam! Aspernatur, 
+                harum dignissimos iure aliquam fuga error similique minima veniam numquam, architecto praesentium voluptatum. 
+                Unde, ipsam voluptas?
+            </p>
+        </div>
+    </section>
+
+    <section class="colmn-lg-4 colmn-md-12 colmn-sm-12"> 
+        <div>
+            <p class="sub3">Sushi</p> 
+            <p class="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis repudiandae ipsa ipsam aperiam! Aspernatur, 
+                harum dignissimos iure aliquam fuga error similique minima veniam numquam, architecto praesentium voluptatum. 
+                Unde, ipsam voluptas?
+            </p>
+        </div>
+    </section>
+</body>
+</html>
 
